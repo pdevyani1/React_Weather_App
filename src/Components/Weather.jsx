@@ -35,7 +35,7 @@ function Weather() {
         }
      }
   return (
-    <div className='container w-[450px] shadow-2xl h-[600px] bg-zinc-900 rounded-lg'>
+    <div className='container w-[450px] shadow-2xl h-[550px] bg-zinc-900 rounded-lg'>
         <div className='city flex justify-center gap-[15px] items-center pt-[25px]'>
             <input type='text' className=' shadow-xl w-[270px] h-[35px] flex border-zinc-600 border-solid border transition-all hover:border-indigo-400 outline-none focus:border-indigo-400 outline-none  rounded-md font-medium pl-[10px] bg-transparent text-zinc-300 ' value={city} onChange={handleOnChange} placeholder='Enter a city name'></input>
             <button className='flex justify-center shadow-xl items-center w-[40px] transition-all delay-75 hover:bg-indigo-400 h-[40px] text-zinc-300 bg-zinc-600 rounded-[50%]' onClick={() => fetchData()}>
